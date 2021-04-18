@@ -1,0 +1,174 @@
+@media (max-width: 1400px)
+    .header
+        & nav
+            .menu
+                &__item
+                    padding-right: 35px
+@media (max-width: 1199px)
+    .header
+        & nav
+            .menu
+                &__item
+                    padding-right: 25px
+                &__item a
+                    font-size: 13px
+        .content__header
+            font-size: 50px
+    .reasons__item
+        .item__descr
+            width: 310px
+    .mobile__item
+        width: 300px
+    .footer__wrapper > div
+        width: 15%
+        &:nth-child(2)
+            width: 70%
+    .footer__apps
+        flex-direction: column
+        align-items: flex-end
+        a img
+            margin-bottom: 10px
+        
+        
+@media (max-width: 991px)
+    .header
+        & nav
+            .menu
+                &__item
+                    padding-right: 15px
+                &__item a
+                    font-size: 10px
+        .subheader
+            &__logo img
+                width: 100%
+            &__text
+                font-size: 12px
+            &__call
+                font-size: 11px
+            &__number
+                font-size: 18px
+            &__btn
+                margin-top: 20px
+                width: 140px
+                height: 39px
+                font-size: 12px
+        .content__header
+            font-size: 40px
+        .content__subheader
+            font-size: 25px
+        .content__btn
+            width: 200px
+            height: 43px
+            font-size: 14px
+    .mobile__item
+        margin-bottom: 10px
+    .choice__img img
+        width: 100%
+    .reasons__item
+        flex-direction: column
+        align-items: center
+        .item__descr
+            margin-top: 20px
+            width: 310px
+    .mobile__item1, .mobile__item2, .mobile__item3
+        margin-top: 19px
+    .mobile__item
+        width: 300px
+    .footer__wrapper
+        flex-direction: column
+        align-items: center
+    .footer__wrapper > div
+        width: 100%
+        align-items: center
+        justify-content: center
+        &:nth-child(3)
+            justify-content: center
+            width: 100%
+    .footer__links__lang
+        margin-bottom: 10px
+    .footer__links__firstline
+        display: flex
+        align-items: center
+        margin-top: 15px
+    .footer__apps
+        flex-direction: row
+        align-items: center
+        a img
+            margin-bottom: 0
+@media (max-width: 767px)
+    .header .subheader
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block
+        .subheader__btnblock
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+    .header nav .menu
+        position: fixed
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 0.6s all
+        &__active
+            left: 0
+        &__item
+            padding-right: 0
+            border: none
+        &__link
+            font-size: 20px
+
+    .header nav .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 26px
+        transform: translateY(-50%)
+        width: 30px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &__active
+            span
+                margin-bottom: -2px
+                &:first-child
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .footer__links__firstline a
+        font-size: 14px
+    .footer__links__secondline a
+        font-size: 9px
+@media (max-width: 575px)
+    .header nav
+        height: 40px
+    .header nav .hamburger
+        top: 23px
+    .header .content__text p:first-child
+        display: none
+    .header .subheader
+        height: 70px
+        &__text
+            display: none
+        &__number
+                font-size: 12px
+        &__btn
+            margin-top: 10px
+            width: 120px
+            height: 30px
+            font-size: 10px
+        

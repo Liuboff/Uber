@@ -1,0 +1,384 @@
+.header
+    background: url("../assets/images/main_bg.jpg")
+    min-height: 100vh
+    padding-bottom: 40px
+    & nav
+        height: 50px
+        width: 100%
+        background-color: #212121
+        .menu
+            margin: 0 auto
+            padding: 13px 70px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            &__item
+                border-right: 2px dotted black
+                padding-right: 50px
+                &:last-child
+                    border-right: none
+                    padding-right: 0
+            &__item a
+                color: #ffffff
+                font-size: 15px
+                font-weight: 300
+                text-decoration: none
+
+        .hamburger
+            display: none
+
+    .subheader
+        background: rgba(0, 0, 0, 0.6)
+        &__logo
+            margin-top: 16px
+            display: block
+            max-width: 100%
+        &__text
+            margin-top: 6px
+            font-size: 13px
+            font-weight: 400
+            color: #FFFFFF
+            opacity: 0.5
+            margin-bottom: 12px
+        &__call
+            margin-top: 22px
+            font-size: 12px
+            font-weight: 300
+            color: #FFFFFF
+            text-align: right
+        &__number
+            display: block
+            margin-top: 8px
+            font-size: 22px
+            font-weight: 400
+            color: #FFFFFF
+            text-align: right
+            line-height: 12px
+            text-decoration: none
+
+        &__btn
+            margin-top: 20px
+            width: 172px
+            height: 46px
+            @include btn()
+        .xs-visible
+            display: none
+
+    .content
+        &__header
+            margin-top: 67px
+            font-size: 60px
+            font-weight: 900
+            color: #ffffff
+            text-align: center
+            text-transform: uppercase
+        &__subheader
+            margin: 0
+            margin-top: 22px
+            color: #ffffff
+            font-size: 36px
+            font-weight: 700
+            text-align: center
+            text-transform: uppercase
+        &__text
+            margin-top: 23px
+            font-size: 18px
+            text-align: center
+            color: #ffffff
+            font-weight: 400
+            p:first-child
+                margin-bottom: 35px
+        &__btn
+            display: block
+            margin: 0 auto
+            margin-top: 118px
+            @include btn()
+            width: 259px
+            height: 63px
+            font-size: 18px
+            
+.reasons
+    margin-top: 70px
+    margin-bottom: 64px
+    .label
+        @include label()
+    &__title
+        @include title()
+    &__item
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        margin-top: 35px
+        .item__img
+            margin-right: 26px
+            width: 114px
+            height: 114px
+            background-color: #1EACC7
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+        .item__descr
+            width: 342px
+            .item__title
+                line-height: 21px
+                color: $main-color
+                font-size: 17px
+                font-weight: 400
+            .item__text
+                color: #202020
+                font-size: 15px
+                font-weight: 300
+                line-height: 21px
+.mobile
+    padding: 48px 0 78px 0
+    background: url("../assets/images/bg_mobile_app.png") center (center / cover) no-repeat
+    .label
+        @include label()
+    &__title
+        @include title()
+    &__subtitle
+        margin-top: 19px
+        color: #222222
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+    &__blocks
+        margin: 0 auto
+        margin-top: 32px
+    &__item
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        position: relative
+    &__item1
+        background: url("../assets/images/mobile_screen_1.jpg") center (center / cover) no-repeat
+    &__item2
+        background: url("../assets/images/mobile_screen_2.jpg") center (center / cover) no-repeat
+    &__item3
+        background: url("../assets/images/mobile_screen_3.jpg") center (center / cover) no-repeat
+    &__item4
+        margin-top: 19px
+        background: url("../assets/images/mobile_screen_4.jpg") center (center / cover) no-repeat
+    &__item5
+        margin-top: 19px
+        background: url("../assets/images/mobile_screen_5.jpg") center (center / cover) no-repeat
+    &__item6
+        margin-top: 19px
+        background: url("../assets/images/mobile_screen_6.jpg") center (center / cover) no-repeat
+    &__text
+        text-align: center
+        font-size: 24px
+        color: #ffffff
+        text-transform: uppercase
+        padding-top: 92px
+    &__plus
+        width: 27px
+        height: 27px
+        border-radius: 50%
+        background-color: #000000
+        margin: 0 auto
+        position: absolute
+        bottom: 35px
+        left: 50%
+        transform: translateX(-50%)
+        &::before
+            content: "+"
+            font-size: 30px
+            line-height: 27.5px
+            color: #1EACC7
+            padding-left: 4.5px
+        &:hover
+            &::before
+                color: #FF5656
+.choice
+    padding: 57px 0 138px 0
+    background: linear-gradient(#000000 0%, #000000 58%, rgba(0, 0, 0, 0) 58% rgba(0, 0, 0, 0) 100%), url("../assets/images/bg_mobile_app.png") center (center / cover) no-repeat
+    background-size: cover
+    .label
+        @include label()
+        color: #000000
+        background-color: #ffffff
+    &__title
+        @include title()
+        color: #ffffff
+    &__subtitle
+        margin-top: 19px
+        color: #FFFFFF
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+    &__img
+        margin: 0 auto
+        margin-top: 65px
+        text-align: center
+    &__text
+        margin: 0 auto
+        color: #222222
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+
+.conditions
+    padding: 67px 0 94px 0
+    .label
+        @include label()
+    &__title
+        @include title()
+        margin-bottom: 33px
+    &__box
+        margin: 0 auto
+    &__caption
+        color: #1ca8c3
+        font-size: 22px
+        font-weight: 400
+    &__caption.red
+        color: #FF5656
+    &__caption.mt
+        margin-top: 62px
+    &__list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 21px
+                height: 20px
+                left: -30px
+                top: 3px
+                background: url("../assets/images/check_blue.svg") center (center / cover) no-repeat
+    &__list.red
+        li
+            &::before
+                background: url("../assets/images/check_red.svg") center (center / cover) no-repeat
+    &__salary
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+    
+.map
+    padding: 49px 0
+    margin: 0 auto
+    min-height: 717px
+    position: relative
+    background: url("../assets/images/map.jpg") center (center / cover) no-repeat
+    .label
+        @include label()
+        background: #ffffff
+        color: #000000
+    &__title
+        @include title()
+        color: #ffffff
+    &__subtitle
+        margin-top: 19px
+        color: #FFFFFF
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+    &__see
+        font-size: 15px
+        color: #1FBAD6
+        text-transform: uppercase
+        text-decoration: none
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        &:hover 
+            text-decoration: none
+            color: #fff
+            cursor: pointer
+
+.footer
+    padding: 14px 22px 39px 22px
+    background: linear-gradient(rgba(7, 7, 22, 0) 0%, rgba(7, 7, 22, 0) 92%, rgba(7, 7, 22, 1) 92%, rgba(7, 7, 22, 1) 100%)
+    background-size: cover
+    .divider
+        width: 300px
+        height: 5px
+        margin: 0 auto
+        background-color: #1FBAD6
+    &__wrapper
+        margin-top: 32px
+        display: flex
+        justify-content: space-between
+        // position: relative
+    &__wrapper > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+            
+    &__social
+        display: flex
+        &__item
+            width: 33px
+            height: 33px
+            background-color: #070716
+            border-radius: 50%
+            margin-right: 8px
+            color: #ffffff
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            &:hover
+                color: #1FBAD6
+            &:last-child
+                margin-right: 0
+
+    &__links
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__secondline
+            margin-top: 15px
+        &__firstline a
+            padding-right: 48px
+            font-size: 15px
+            color: #070716
+            font-weight: 400
+            text-decoration: none
+            text-transform: uppercase
+            &:hover
+                color: #1FBAD6
+            &:last-child
+                padding-right: 0
+        &__secondline a
+            color: #999999
+            font-size: 11px
+            font-weight: 300
+            text-decoration: none
+            text-transform: uppercase
+            padding-right: 22px
+            &:hover
+                color: #1FBAD6
+            &:last-child
+                padding-right: 0
+        &__lang a
+            margin-top: 19px
+            color: #1FBAD6
+            font-size: 11px
+            font-weight: 400
+            text-decoration: none
+            text-transform: uppercase
+            &:hover
+                color: #070716
+    &__apps
+        display: flex
+    &__apps a
+        margin-left: 8px
+        &:first-child
+            margin-left: 0
+.xs-visible
+    display: none
